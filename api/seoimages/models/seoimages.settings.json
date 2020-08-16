@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seoimages",
+  "info": {
+    "name": "seoimages"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "seocover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featureds",
+  "info": {
+    "name": "featured"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Subtitle": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "Cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogposts",
+  "info": {
+    "name": "Blogposts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Subtitle": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "Cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "keywords": {
+      "type": "string"
+    }
+  }
+}
