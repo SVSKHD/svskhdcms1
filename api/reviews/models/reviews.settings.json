@@ -31,6 +31,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "keywords": {
+      "type": "string"
     }
   }
 }
