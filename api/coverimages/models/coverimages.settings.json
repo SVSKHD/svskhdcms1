@@ -1,15 +1,15 @@
 {
   "kind": "collectionType",
-  "collectionName": "seoimages",
+  "collectionName": "coverimages",
   "info": {
-    "name": "seoimages"
+    "name": "Coverimages"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "seocover": {
+    "Coverimages": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
