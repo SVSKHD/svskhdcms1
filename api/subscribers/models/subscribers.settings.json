@@ -16,7 +16,9 @@
       "unique": false
     },
     "Email": {
-      "type": "email"
+      "type": "email",
+      "required": true,
+      "unique": true
     }
   }
 }
