@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "subscribers",
   "info": {
-    "name": "Subscribers"
+    "name": "subscribers"
   },
   "options": {
     "increments": true,
@@ -10,15 +10,10 @@
   },
   "attributes": {
     "Name": {
-      "type": "string",
-      "private": false,
-      "required": false,
-      "unique": false
+      "type": "string"
     },
     "Email": {
-      "type": "email",
-      "required": true,
-      "unique": true
+      "type": "email"
     }
   }
 }
