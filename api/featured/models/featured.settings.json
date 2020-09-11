@@ -59,6 +59,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "SeoContent": {
+      "type": "text"
     }
   }
 }
